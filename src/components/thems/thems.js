@@ -3,8 +3,22 @@ import './thems.css';
 function Thems() {
 
    function changeThem() {
-         document.querySelector(".them-icon").classList.toggle("fa-sun");
-         document.querySelector(".them-icon").classList.toggle("fa-moon");
+
+        let themIcon = document.querySelector(".them-icon");
+
+        themIcon.classList.toggle("fa-sun");
+        themIcon.classList.toggle("fa-moon");
+
+        if (themIcon.classList.contains("fa-sun")) {
+            document.documentElement.style.setProperty("--task-bg","white");
+            document.documentElement.style.setProperty("--task-color","black");
+        }else {
+            document.documentElement.style.setProperty("--task-bg","black");
+            document.documentElement.style.setProperty("--task-color","white");
+        }
+
+
+
    }
 
    return (

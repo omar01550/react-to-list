@@ -1,3 +1,10 @@
+:root{
+   --task-color:white;
+   --task-bg:black;
+   --bg-tasks-color:hsl(235, 21%, 11%);
+}
+
+
 body{
    background-color: #333;
    font-size: 16px;
@@ -31,7 +38,7 @@ body{
 
 header{
    width: 100%;
-   background-color: crimson;
+   background-image: url("./images/bg-desktop-dark.jpg");
 
 }
 header .container{
@@ -43,4 +50,11 @@ header .container{
       justify-content: space-between;
       align-items: center;
 
+}
+
+.todos{
+   width: 100%;
+   background-color: var(--bg-tasks-color);
+   padding-top:10px;
+   min-height: 70vh;
 }

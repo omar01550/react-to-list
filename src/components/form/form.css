@@ -9,4 +9,5 @@ form{
    border:none;
    outline:none;
    font-size: 1.3rem;
+   border-radius: 6px;
  }

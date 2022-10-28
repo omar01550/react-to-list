@@ -20,6 +20,10 @@ function reducer(state=[],action) {
              case "UpDateCompleted":
                    return state.map(ele => ele.id == action.id?{content:action.content,complete:! action.case,id:action.id}:ele);
                break;
+               case "UpDateItem":
+                 console.log(action.id);
+                 return state;
+                 break;
          default:
             return state;
        }

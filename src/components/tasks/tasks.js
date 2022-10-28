@@ -2,16 +2,16 @@ import Task from '../task/task';
 import {useSelector} from 'react-redux';
 
 
-function Tasks() {
+function Tasks({setInput}) {
 
    const data =useSelector(data=> data );
-   console.log(data);
+
 
     return(
         <div className="tasks">
              {data.map(ele =>{
                 return (
-                   <Task ele={ele}/>
+                   <Task ele={ele} setInput={setInput}/>
                 )
              })}
         </div>
